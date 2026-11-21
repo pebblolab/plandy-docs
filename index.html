@@ -73,6 +73,20 @@
   .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.25; margin: 28px 0 14px; letter-spacing: -.02em; }
   .hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .hero p.lead { font-size: 1.15rem; color: var(--sub); max-width: 620px; margin: 0 auto; }
+  /* 베타 참여 버튼 */
+  .cta { margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 15px 30px; border-radius: 999px; font-size: 1.08rem; font-weight: 700; color: #fff;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--brand) 40%, transparent);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 16px 34px color-mix(in srgb, var(--brand) 50%, transparent); }
+  .btn svg { width: 20px; height: 20px; }
+  .cta small { color: var(--sub); font-size: .86rem; }
+  nav .links a.pill { color: #fff; background: var(--brand); padding: 6px 14px; border-radius: 999px; font-weight: 600; }
+  nav .links a.pill:hover { color: #fff; opacity: .9; }
   .badges { margin-top: 26px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
   .badge { font-size: .85rem; padding: 6px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); color: var(--sub); }
 
@@ -139,6 +153,7 @@
       <a href="#features">기능</a>
       <a href="support/">지원</a>
       <a href="privacy/">개인정보</a>
+      <a class="pill" href="https://testflight.apple.com/join/2M2Mc3j3">베타 참여</a>
     </div>
   </div>
 </nav>
@@ -149,6 +164,13 @@
     <h1>말하듯 적으면,<br><em>일정이 됩니다.</em></h1>
     <p class="lead">Plandy는 iPhone의 캘린더와 미리 알림을 한곳에 모아 보여 주는 앱이에요.
       “내일 오후 3시 회의”처럼 적기만 하면 날짜와 시간, 반복까지 알아서 채워 줘요.</p>
+    <div class="cta">
+      <a class="btn" href="https://testflight.apple.com/join/2M2Mc3j3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        베타 참여하기
+      </a>
+      <small>Apple의 TestFlight 앱으로 설치돼요 · 무료</small>
+    </div>
     <div class="badges">
       <span class="badge">iPhone</span>
       <span class="badge">iPad</span>
@@ -208,7 +230,7 @@
     <div class="card">
       <h3 style="margin-top:0">Plandy — Calendar &amp; to-dos you can just type</h3>
       <p>Plandy brings your iPhone Calendar and Reminders together in one place. Type something like “내일 오후 3시 회의” (tomorrow 3 PM meeting) and the date, time, and repeat are filled in for you (Korean natural language). Widgets, Apple Watch, Siri &amp; Shortcuts, and Korean public holidays included. No account, no ads, no tracking — your data stays on your device and in your iCloud.</p>
-      <p style="margin-top:10px"><a href="support/#en">Support</a> · <a href="privacy/#en">Privacy Policy</a></p>
+      <p style="margin-top:10px"><a href="https://testflight.apple.com/join/2M2Mc3j3">Join the beta (TestFlight)</a> · <a href="support/#en">Support</a> · <a href="privacy/#en">Privacy Policy</a></p>
     </div>
   </div>
 </section>
