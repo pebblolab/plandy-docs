@@ -109,6 +109,21 @@
   .wide { margin: 44px auto 0; max-width: 760px; text-align: center; }
   .wide img { width: 100%; border-radius: 26px; border: 1px solid var(--line); box-shadow: var(--shadow); display: block; }
 
+  /* 접는 화면 */
+  .fold { padding: 64px 0 8px; }
+  .fold .open { max-width: 860px; margin: 0 auto; text-align: center; }
+  .fold .open img { width: 100%; border-radius: 30px; border: 1px solid var(--line); box-shadow: var(--shadow); display: block; }
+  .fold .closed { margin: 26px auto 0; max-width: 860px; display: flex; gap: 22px; justify-content: center; align-items: flex-end; flex-wrap: wrap; }
+  .fold .closed figure { text-align: center; }
+  .fold .closed img { border-radius: 24px; border: 1px solid var(--line); box-shadow: var(--shadow); display: block; height: auto; }
+  .fold .closed .p img { width: 220px; }
+  .fold .closed .l img { width: 330px; }
+  .fold span { display: block; margin-top: 12px; font-size: .92rem; color: var(--sub); }
+  @media (max-width: 560px) {
+    .fold .closed .p img { width: 42vw; }
+    .fold .closed .l img { width: 88vw; }
+  }
+
   /* 기능 */
   section h2 { font-size: clamp(1.6rem, 3.4vw, 2.1rem); text-align: center; margin: 0 0 8px; letter-spacing: -.01em; }
   section .sub { text-align: center; color: var(--sub); margin: 0 0 36px; }
@@ -198,6 +213,18 @@
   </div>
 </section>
 
+<section class="fold" id="fold" aria-label="접는 화면">
+  <div class="wrap">
+    <h2>접어도, 펼쳐도</h2>
+    <p class="sub">iPhone Duo처럼 접는 화면에서도 화면 크기에 맞춰 자연스럽게 바뀌어요.</p>
+    <figure class="open"><img src="assets/duo-open-month.jpg" alt="iPhone Duo 펼친 화면 — 월 달력과 하루 목록" loading="lazy"><span>펼치면 — 큰 달력과 하루 목록을 나란히, 메뉴는 옆으로</span></figure>
+    <div class="closed">
+      <figure class="p"><img src="assets/duo-closed-month.jpg" alt="iPhone Duo 접은 화면 — 세로" loading="lazy"><span>접으면 — 한 손에 쏙</span></figure>
+      <figure class="l"><img src="assets/duo-closed-landscape.jpg" alt="iPhone Duo 접은 화면 — 가로" loading="lazy"><span>접은 채로 가로로 — 달력 옆에 하루 목록</span></figure>
+    </div>
+  </div>
+</section>
+
 <section class="features" id="features">
   <div class="wrap">
     <h2>필요한 것만, 손에 익게</h2>
@@ -210,7 +237,7 @@
       <div class="card"><div class="emoji">🎌</div><h3>똑똑한 공휴일</h3><p>대체·임시공휴일까지 빨갛게 표시돼요. 아직 발표되지 않은 해도 음력으로 미리 계산해 ‘(예상)’으로 알려 드려요.</p></div>
       <div class="card"><div class="emoji">🗣️</div><h3>Siri와 단축어</h3><p>“Plandy에 일정 추가”처럼 말로 부르거나, 단축어에 넣어 나만의 흐름을 만들 수 있어요.</p></div>
       <div class="card"><div class="emoji">🖼️</div><h3>사진 붙이기</h3><p>일정과 할 일에 사진을 붙여 두세요. 사진은 기기와 내 iCloud에만 저장돼요.</p></div>
-      <div class="card"><div class="emoji">📱</div><h3>어떤 화면에서도</h3><p>iPhone, iPad, Mac, 그리고 접는 화면까지. 화면 크기에 맞춰 배치가 바뀌어요.</p></div>
+      <div class="card"><div class="emoji">📱</div><h3>어떤 화면에서도</h3><p>iPhone, iPad, Mac, 그리고 iPhone Duo 같은 접는 화면까지. 화면 크기에 맞춰 배치가 바뀌어요.</p></div>
     </div>
   </div>
 </section>
