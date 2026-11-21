@@ -4,49 +4,81 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plandy 지원</title>
+<meta name="description" content="Plandy 문의와 자주 묻는 질문">
+<meta name="theme-color" content="#6551FA">
 <link rel="icon" type="image/png" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<style>
-  body { font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #1c1b29; }
-  h1 { color: #6551FA; font-size: 1.6rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  a { color: #6551FA; }
-  .home { display: inline-flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; font-weight: 700; margin-bottom: 8px; }
-  .home img { width: 28px; height: 28px; border-radius: 7px; }
-</style>
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-<a class="home" href="../"><img src="../assets/icon-512.png" alt="">Plandy</a>
-<h1>Plandy 지원</h1>
-<p>Plandy는 iPhone의 캘린더와 미리 알림을 한곳에서 보고 관리하는 앱이에요. 제목에 "내일 오후 3시 회의"처럼 쓰면 날짜·시간·반복을 알아서 채워 줘요.</p>
-
-<h2>문의</h2>
-<p>사용 중 불편한 점, 오류, 제안은 이메일로 보내 주세요.<br>
-<a href="mailto:pebblolab@gmail.com">pebblolab@gmail.com</a></p>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/icon-512.png" alt="">Plandy</a>
+    <div class="links">
+      <a href="../#features">기능</a>
+      <a href="../support/" class="on">지원</a>
+      <a href="../privacy/">개인정보</a>
+      <a class="pill" href="https://testflight.apple.com/join/2M2Mc3j3">베타 참여</a>
+    </div>
+  </div>
+</nav>
+<header class="page-head" id="ko">
+  <div class="narrow">
+    <img class="icon" src="../assets/icon-512.png" alt="">
+    <h1>Plandy 지원</h1>
+    <p>Plandy는 iPhone의 캘린더와 미리 알림을 한곳에서 보고 관리하는 앱이에요. 제목에 "내일 오후 3시 회의"처럼 쓰면 날짜·시간·반복을 알아서 채워 줘요.</p>
+    <div class="lang"><a href="#ko" class="on">한국어</a><a href="#en">English</a></div>
+  </div>
+</header>
+<main class="narrow">
+  <div class="cards">
+    <div class="contact">
+      <h2>문의</h2>
+      <p>사용 중 불편한 점, 오류, 제안은 이메일로 보내 주세요.</p>
 <p>문제를 알려 주실 때 기기 모델, iOS 버전, 어떤 화면에서 무엇을 했는지 함께 알려 주시면 빨리 확인할 수 있어요.</p>
-
-<h2>자주 묻는 질문</h2>
-<p><b>일정과 할 일은 어디에 저장되나요?</b><br>iOS의 캘린더·미리 알림에 저장되며, 연결한 계정(iCloud, Google 등)과 동기화돼요. 개발자는 볼 수 없어요.</p>
-<p><b>사진은 어디에 저장되나요?</b><br>기기와 본인 iCloud에 저장되며, 캘린더·미리 알림 계정(구글 등)에는 올라가지 않아요.</p>
-<p><b>공휴일이 안 보여요.</b><br>인터넷에 연결된 상태에서 앱을 한 번 열면 공휴일을 받아 와요. 설정 → 화면 → '공휴일 빨간색으로 표시'가 켜져 있는지 확인해 주세요.</p>
-<p><b>알림이 안 와요.</b><br>설정 → 알림 → Plandy에서 알림이 켜져 있는지 확인해 주세요.</p>
-
-<p><a href="../privacy/">개인정보 처리방침</a> · <a href="#en">English below ↓</a></p>
-<hr>
-<h1 id="en">Plandy Support</h1>
-<p>Plandy lets you see and manage your iPhone Calendar and Reminders in one place. Type something like "tomorrow 3 PM meeting" in the title and the date, time, and repeat are filled in automatically (Korean natural language).</p>
-
-<h2>Contact</h2>
-<p>For problems, bugs, or suggestions, email us:<br>
-<a href="mailto:pebblolab@gmail.com">pebblolab@gmail.com</a></p>
+      <a class="mail" href="mailto:pebblolab@gmail.com">pebblolab@gmail.com</a>
+    </div>
+    <div class="card">
+      <h2>자주 묻는 질문</h2>
+      <details><summary>일정과 할 일은 어디에 저장되나요?</summary><p>iOS의 캘린더·미리 알림에 저장되며, 연결한 계정(iCloud, Google 등)과 동기화돼요. 개발자는 볼 수 없어요.</p></details>
+      <details><summary>사진은 어디에 저장되나요?</summary><p>기기와 본인 iCloud에 저장되며, 캘린더·미리 알림 계정(구글 등)에는 올라가지 않아요.</p></details>
+      <details><summary>공휴일이 안 보여요.</summary><p>인터넷에 연결된 상태에서 앱을 한 번 열면 공휴일을 받아 와요. 설정 → 화면 → '공휴일 빨간색으로 표시'가 켜져 있는지 확인해 주세요.</p></details>
+      <details><summary>알림이 안 와요.</summary><p>설정 → 알림 → Plandy에서 알림이 켜져 있는지 확인해 주세요.</p></details>
+    </div>
+  </div>
+</main>
+<div class="part-gap"></div>
+<header class="page-head" id="en">
+  <div class="narrow">
+    <img class="icon" src="../assets/icon-512.png" alt="">
+    <h1>Plandy Support</h1>
+    <p>Plandy lets you see and manage your iPhone Calendar and Reminders in one place. Type something like "tomorrow 3 PM meeting" in the title and the date, time, and repeat are filled in automatically (Korean natural language).</p>
+    <div class="lang"><a href="#ko">한국어</a><a href="#en" class="on">English</a></div>
+  </div>
+</header>
+<main class="narrow" lang="en">
+  <div class="cards">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>For problems, bugs, or suggestions, email us:</p>
 <p>Please include your device model, iOS version, and what you were doing so we can look into it quickly.</p>
+      <a class="mail" href="mailto:pebblolab@gmail.com">pebblolab@gmail.com</a>
+    </div>
+    <div class="card">
+      <h2>FAQ</h2>
+      <details><summary>Where are my events and to-dos stored?</summary><p>In iOS Calendar and Reminders, synced with the accounts you connected (iCloud, Google, etc.). The developer cannot see them.</p></details>
+      <details><summary>Where are my photos stored?</summary><p>On your device and in your own iCloud. They are not uploaded to Calendar or Reminders accounts such as Google.</p></details>
+      <details><summary>Holidays are not showing.</summary><p>Open the app once while connected to the internet so it can download the holiday list. Also check that Settings &gt; Display &gt; "Show holidays in red" is on.</p></details>
+      <details><summary>I'm not getting notifications.</summary><p>Check that notifications are allowed for Plandy in Settings &gt; Notifications.</p></details>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div><a href="../">처음</a><a href="../support/">지원</a><a href="../privacy/">개인정보 처리방침</a><a href="mailto:pebblolab@gmail.com">문의</a></div>
+    <div>© 2026 Plandy</div>
+  </div>
+</footer>
 
-<h2>FAQ</h2>
-<p><b>Where are my events and to-dos stored?</b><br>In iOS Calendar and Reminders, synced with the accounts you connected (iCloud, Google, etc.). The developer cannot see them.</p>
-<p><b>Where are my photos stored?</b><br>On your device and in your own iCloud. They are not uploaded to Calendar or Reminders accounts such as Google.</p>
-<p><b>Holidays are not showing.</b><br>Open the app once while connected to the internet so it can download the holiday list. Also check that Settings &gt; Display &gt; "Show holidays in red" is on.</p>
-<p><b>I'm not getting notifications.</b><br>Check that notifications are allowed for Plandy in Settings &gt; Notifications.</p>
-
-<p><a href="../privacy/">Privacy Policy</a></p>
 </body>
 </html>
